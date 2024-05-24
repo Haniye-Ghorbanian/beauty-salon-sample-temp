@@ -2368,6 +2368,21 @@ img {
   font-weight: 600;
   margin-bottom: 30px;
 }
+.widget.contact-widget .contact-info-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+.widget.contact-widget .contact-info-item-text {
+  margin-right: 15px;
+}
 .widget.contact-widget .address {
   padding-left: 30px;
   position: relative;
@@ -2382,7 +2397,7 @@ img {
 }
 .widget.contact-widget .address .icon {
   position: absolute;
-  left: 0;
+  right: 0;
   top: 5px;
 }
 
