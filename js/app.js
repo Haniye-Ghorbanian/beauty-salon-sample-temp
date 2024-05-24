@@ -79,6 +79,14 @@
 	         });
 	         return false;
 	    });
+		
+		$('.menu-item').click(function() {
+			// Remove 'current-menu-item' class from all menu items
+			$('.menu-item').removeClass('current');
+			
+			// Add 'current-menu-item' class to the clicked menu item
+			$(this).addClass('current');
+		});
 
 	    initLightbox({
 	    	selector : '.gallery-item a',
@@ -110,3 +118,6 @@
 	});
 
 })(jQuery, document, window);
+
+
+

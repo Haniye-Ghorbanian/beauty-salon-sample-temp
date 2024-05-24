@@ -2189,7 +2189,8 @@ form input:not([type=submit]), form textarea {
 #branding {
   float: left;
 }
-#branding .logo, #branding .logo-copy {
+#branding .logo,
+#branding .logo-copy {
   display: inline-block;
   vertical-align: middle;
 }
