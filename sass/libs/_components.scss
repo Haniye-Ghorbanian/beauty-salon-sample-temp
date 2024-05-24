@@ -332,6 +332,11 @@
     }
 
     figcaption {
+		height: 100px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: start;
       background-color: $secondary-color;
       padding: 15px 20px 17px;
       position: relative;

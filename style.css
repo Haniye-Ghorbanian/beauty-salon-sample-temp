@@ -644,6 +644,11 @@ form input:not([type=submit]), form textarea {
   margin-bottom: 0;
 }
 .gallery-item figure figcaption {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
   background-color: #1b181b;
   padding: 15px 20px 17px;
   position: relative;
