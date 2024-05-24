@@ -685,7 +685,8 @@ form input:not([type=submit]), form textarea {
   overflow: hidden;
   height: 0;
 }
-.contact-form input:not([type=submit]), .contact-form textarea {
+.contact-form input:not([type=submit]),
+.contact-form textarea {
   background-repeat: no-repeat !important;
   background-position: 10px center;
   padding: 15px 15px 15px 40px;
@@ -695,7 +696,10 @@ form input:not([type=submit]), form textarea {
   outline: none;
   transition: 0.3s ease;
 }
-.contact-form input:not([type=submit]):hover, .contact-form input:not([type=submit]):active, .contact-form input:not([type=submit]):focus, .contact-form textarea:hover, .contact-form textarea:active, .contact-form textarea:focus {
+.contact-form input:not([type=submit]):hover, .contact-form input:not([type=submit]):active, .contact-form input:not([type=submit]):focus,
+.contact-form textarea:hover,
+.contact-form textarea:active,
+.contact-form textarea:focus {
   border-color: #cc7250;
 }
 .contact-form textarea {
@@ -763,11 +767,13 @@ form input:not([type=submit]), form textarea {
   left: 0;
   position: absolute;
 }
-.address-info .address, .address-info .contact-info {
+.address-info .address,
+.address-info .contact-info {
   display: inline-block;
   vertical-align: top;
 }
-.address-info .address p, .address-info .contact-info p {
+.address-info .address p,
+.address-info .contact-info p {
   margin: 0;
 }
 .address-info .address {
@@ -784,11 +790,13 @@ form input:not([type=submit]), form textarea {
 .address-info .contact-info a {
   display: block;
 }
-.address-info .contact-info .mail, .address-info .contact-info .phone {
+.address-info .contact-info .mail,
+.address-info .contact-info .phone {
   position: relative;
   padding-left: 30px;
 }
-.address-info .contact-info .mail .icon, .address-info .contact-info .phone .icon {
+.address-info .contact-info .mail .icon,
+.address-info .contact-info .phone .icon {
   position: absolute;
   top: 5px;
   left: 0;
@@ -836,6 +844,8 @@ form input:not([type=submit]), form textarea {
   padding-left: 0;
 }
 .prices li {
+  display: flex;
+  justify-content: space-between;
   padding: 15px 0;
   border-bottom: 1px solid #3a353a;
   font-family: "yekan";
@@ -848,8 +858,11 @@ form input:not([type=submit]), form textarea {
 }
 .prices li .price {
   float: right;
-  font-size: 30px;
-  font-size: 1.875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   background-image: -webkit-linear-gradient(90deg, #cc7250, #f7d0c2);
   -webkit-background-clip: text;
