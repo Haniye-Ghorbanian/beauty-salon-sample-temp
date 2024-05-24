@@ -770,20 +770,20 @@ form input:not([type=submit]), form textarea {
   left: 0;
   position: absolute;
 }
-.address-info address, .address-info .contact-info {
+.address-info .address, .address-info .contact-info {
   display: inline-block;
   vertical-align: top;
 }
-.address-info address p, .address-info .contact-info p {
+.address-info .address p, .address-info .contact-info p {
   margin: 0;
 }
-.address-info address {
+.address-info .address {
   width: 200px;
   padding-left: 30px;
   position: relative;
   margin-right: 20px;
 }
-.address-info address .icon {
+.address-info .address .icon {
   position: absolute;
   left: 0;
   top: 5px;
@@ -824,7 +824,7 @@ form input:not([type=submit]), form textarea {
 }
 .subscribe-form input[type=submit] {
   position: absolute;
-  right: 0;
+  left: 0;
   top: 0;
   bottom: 0;
   padding: 15px 20px;
@@ -2287,7 +2287,7 @@ form input:not([type=submit]), form textarea {
   color: white;
 }
 .page .section-title {
-  text-align: left;
+  text-align: right;
   color: #787377;
   font-size: 48px;
   font-size: 3rem;
@@ -2331,13 +2331,19 @@ img {
   font-weight: 600;
   margin-bottom: 30px;
 }
-.widget.contact-widget address, .widget.contact-widget .mail, .widget.contact-widget .phone {
+.widget.contact-widget .address {
   padding-left: 30px;
   position: relative;
   margin-bottom: 10px;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
-.widget.contact-widget address .icon, .widget.contact-widget .mail .icon, .widget.contact-widget .phone .icon {
+.widget.contact-widget .address .icon {
   position: absolute;
   left: 0;
   top: 5px;

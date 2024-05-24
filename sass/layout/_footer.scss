@@ -17,11 +17,12 @@
 	}
 
 	&.contact-widget{
-		address,.mail,.phone{
+		.address {
 			padding-left: 30px;
 			position: relative;
 			margin-bottom: 10px;
-			display: block;
+			display: flex;
+			flex-direction: row-reverse;
 
 			.icon{
 				position: absolute;
