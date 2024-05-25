@@ -433,10 +433,12 @@
 
   .address,
   .contact-info {
-    display: inline-block;
+    display: flex;
     vertical-align: top;
+    width: 100%;
     p {
-      margin: 0;
+      margin-right: 10px;
+      margin-bottom: 5px;
     }
   }
   .address {

@@ -1,275 +1,328 @@
 <!DOCTYPE html>
 <html lang="fa-IR" dir="rtl">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
-		
-		<title>Beauty Salon | Gallery</title>
-		<!-- Loading third party fonts -->
-		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
-		<link href="fonts/novecento-font/novecento-font.css" rel="stylesheet" type="text/css">
-		<!-- Loading main css file -->
-		<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="font.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,maximum-scale=1"
+    />
 
-		
-		<!--[if lt IE 9]>
-		<script src="js/ie-support/html5.js"></script>
-		<script src="js/ie-support/respond.js"></script>
-		<![endif]-->
+    <title>Beauty Salon | Gallery</title>
+    <!-- Loading third party fonts -->
+    <link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="fonts/novecento-font/novecento-font.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Loading main css file -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="font.css" />
 
-	</head>
+    <!--[if lt IE 9]>
+      <script src="js/ie-support/html5.js"></script>
+      <script src="js/ie-support/respond.js"></script>
+    <![endif]-->
+  </head>
 
+  <body>
+    <div id="site-content">
+      <header class="site-header">
+        <div class="container">
+          <a id="branding" href="index.html">
+            <img src="images/logo.png" alt="Company name" class="logo" />
+            <div class="logo-copy">
+              <h1 class="site-title">نام شرکت</h1>
+              <small class="site-description">شعار اینجا قرار می‌گیرد</small>
+            </div>
+          </a>
+          <!-- #branding -->
+          <!-- Default snippet for navigation -->
+          <div class="main-navigation">
+            <button type="button" class="menu-toggle">
+              <i class="fa fa-bars"></i>
+            </button>
+            <ul class="menu">
+              <li class="menu-item"><a href="index.html">خانه</a></li>
+              <li class="menu-item"><a href="service.html">خدمات</a></li>
+              <li class="menu-item current-menu-item"><a href="gallery.html">گالری</a></li>
+              <li class="menu-item">
+                <a href="about.html">درباره ما</a>
+              </li>
+              <li class="menu-item"><a href="contact.html">تماس با ما</a></li>
+            </ul>
+            <!-- .menu -->
+          </div>
+          <!-- .main-navigation -->
+          <div class="mobile-navigation"></div>
+        </div>
+      </header>
 
-	<body>
+      <main class="main-content">
+        <div class="page">
+          <div class="container">
+            <div class="text-center">
+              <div class="filter-links filterable-nav">
+                <select class="mobile-filter">
+                  <option value="*">همه را نشان بده</option>
+                  <option value=".hair">مو</option>
+                  <option value=".manicure">مانیکور</option>
+                  <option value=".pedicure">پدیکور</option>
+                  <option value=".face">صورت</option>
+                  <option value=".makeup">آرایش</option>
+                </select>
+                <a href="#" class="current wow fadeInRight" data-filter="*"
+                  >همه</a
+                >
+                <a
+                  href="#"
+                  class="wow fadeInRight"
+                  data-wow-delay=".2s"
+                  data-filter=".hair"
+                  >مو</a
+                >
+                <a
+                  href="#"
+                  class="wow fadeInRight"
+                  data-wow-delay=".4s"
+                  data-filter=".manicure"
+                  >مانیکور</a
+                >
+                <a
+                  href="#"
+                  class="wow fadeInRight"
+                  data-wow-delay=".6s"
+                  data-filter=".pedicure"
+                  >پدیکور</a
+                >
+                <a
+                  href="#"
+                  class="wow fadeInRight"
+                  data-wow-delay=".8s"
+                  data-filter=".face"
+                  >صورت</a
+                >
+                <a
+                  href="#"
+                  class="wow fadeInRight"
+                  data-wow-delay="1s"
+                  data-filter=".makeup"
+                  >آرایش</a
+                >
+              </div>
+            </div>
 
-		<div id="site-content">
-			
-			<header class="site-header">
+            <div class="filterable-items">
+              <div class="gallery-item filterable-item manicure">
+                <a href="dummy/large-gallery/gallery-1.jpg">
+                  <figure class="featured-image">
+                    <img src="dummy/gallery-1.jpg" alt="" />
+                    <figcaption>
+                      <h2 class="gallery-title">مانیکور </h2>
+                      <p>مجموعه‌ای از آخرین طرح‌های مانیکور</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+              <div class="gallery-item filterable-item face">
+                <a href="dummy/large-gallery/gallery-2.jpg">
+                  <figure class="featured-image">
+                    <img src="dummy/gallery-2.jpg" alt="" />
+                    <figcaption>
+                      <h2 class="gallery-title">درمان صورت</h2>
+                      <p>لحظاتی از خدمات درمانی صورت در مرکز زیبایی</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+              <div class="gallery-item filterable-item hair">
+                <a href="dummy/large-gallery/gallery-3.jpg">
+                  <figure class="featured-image">
+                    <img src="dummy/gallery-3.jpg" alt="" />
+                    <figcaption>
+                      <h2 class="gallery-title">کوتاهی مو</h2>
+                      <p>تصاویری از کوتاهی مو در مرکز زیبایی</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+
+              <div class="gallery-item filterable-item pedicure">
+                <a href="dummy/large-gallery/gallery-4.jpg">
+                  <figure class="featured-image">
+                    <img src="dummy/gallery-4.jpg" alt="" />
+                    <figcaption>
+                      <h2 class="gallery-title">مراقبت پا</h2>
+                      <p>عکس‌هایی از خدمات مراقبت پا در مرکز زیبایی</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+              <div class="gallery-item filterable-item face">
+                <a href="dummy/large-gallery/gallery-5.jpg">
+                  <figure class="featured-image">
+                    <img src="dummy/gallery-5.jpg" alt="" />
+                    <figcaption>
+                      <h2 class="gallery-title">خدمات صورت</h2>
+                      <p>عکس‌هایی از خدمات درمانی صورت در مرکز زیبایی</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+              <div class="gallery-item filterable-item face">
+                <a href="dummy/large-gallery/gallery-6.jpg">
+                  <figure class="featured-image">
+                    <img src="dummy/gallery-6.jpg" alt="" />
+                    <figcaption>
+                      <h2 class="gallery-title">نگه‌داری پوست صورت</h2>
+                      <p>عکس‌هایی از خدمات نگه‌داری پوست صورت در مرکز زیبایی</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+              <div class="gallery-item filterable-item manicure">
+                <a href="dummy/large-gallery/gallery-7.jpg">
+                  <figure class="featured-image">
+                    <img src="dummy/gallery-7.jpg" alt="" />
+                    <figcaption>
+                      <h2 class="gallery-title">مانیکور</h2>
+                      <p>عکس‌هایی از خدمات مانیکور در مرکز زیبایی</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+
+              <div class="gallery-item filterable-item face">
+                <a href="dummy/large-gallery/gallery-8.jpg">
+                  <figure class="featured-image">
+                    <img src="dummy/gallery-8.jpg" alt="" />
+                    <figcaption>
+                      <h2 class="gallery-title">مراقبت پوست صورت</h2>
+                      <p>عکس‌هایی از خدمات مراقبت پوست صورت در مرکز زیبایی</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+              <div class="gallery-item filterable-item face">
+                <a href="dummy/large-gallery/gallery-9.jpg">
+                  <figure class="featured-image">
+                    <img src="dummy/gallery-9.jpg" alt="" />
+                    <figcaption>
+                      <h2 class="gallery-title">خدمات درمانی صورت</h2>
+                      <p>عکس‌هایی از خدمات درمانی صورت در مرکز زیبایی</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+              <div class="gallery-item filterable-item manicure">
+                <a href="dummy/large-gallery/gallery-10.jpg">
+                  <figure class="featured-image">
+                    <img src="dummy/gallery-10.jpg" alt="" />
+                    <figcaption>
+                      <h2 class="gallery-title">خدمات مانیکور</h2>
+                      <p>عکس‌هایی از خدمات مانیکور در مرکز زیبایی</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+              <div class="gallery-item filterable-item makeup">
+                <a href="dummy/large-gallery/gallery-11.jpg">
+                  <figure class="featured-image">
+                    <img src="dummy/gallery-11.jpg" alt="" />
+                    <figcaption>
+                      <h2 class="gallery-title">آرایش</h2>
+                      <p>عکس‌هایی از خدمات آرایش در مرکز زیبایی</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+
+              <div class="gallery-item filterable-item makeup">
+                <a href="dummy/large-gallery/gallery-12.jpg">
+                  <figure class="featured-image">
+                    <img src="dummy/gallery-12.jpg" alt="" />
+                    <figcaption>
+                      <h2 class="gallery-title">خدمات آرایشی</h2>
+                      <p>عکس‌هایی از خدمات آرایشی در مرکز زیبایی</p>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="site-footer">
 				<div class="container">
-					<a id="branding" href="index.html">
-						<img src="images/logo.png" alt="Company name" class="logo">
-						<div class="logo-copy">
-							<h1 class="site-title">نام شرکت</h1>
-							<small class="site-description">شعار اینجا قرار می‌گیرد</small>
+				  <div class="row">
+					<div class="col-md-3">
+					  <div class="widget contact-widget">
+						<h3 class="widget-title">تماس با ما</h3>
+						<div class="contact-info">
+						  <div class="contact-info-item">
+							  <p class="contact-info-item-text"><strong>نام سالن زیبایی</strong>تهران نام خیابان شماره پلاک</p>
+							<img
+							  src="images/icon-map-small.png"
+							  height="15px"
+							  class="icon"
+							/>
+						  </div>
+						  <div class="contact-info-item">
+							<div class="contact-info-item-text">
+							  <a href="mailto:contact@companyname.com" class="mail">
+								contact@companyname.com
+							  </a>
+							</div>
+							<div>
+							  <img src="images/icon-envelope-small.png" class="icon" />
+							</div>
+						  </div>
+						  <div class="contact-info-item">
+							<div class="contact-info-item-text">
+							  <a href="tel:(500)942042259" class="phone"> ۱۲۳۴۵۶۷۸ </a>
+							</div>
+							<div>
+							  <img src="images/icon-phone-small.png" class="icon" />
+							</div>
+						  </div>
 						</div>
-					</a> <!-- #branding -->
-					<!-- Default snippet for navigation -->
-					<div class="main-navigation">
-						<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
-						<ul class="menu">
-							<li class="menu-item"><a href="index.html">خانه</a></li>
-							<li class="menu-item"><a href="service.html">خدمات</a></li>
-							<li class="menu-item"><a href="gallery.html">گالری</a></li>
-							<li class="menu-item current-menu-item"><a href="about.html">درباره ما</a></li>
-							<li class="menu-item"><a href="contact.html">تماس با ما</a></li>
-						</ul> <!-- .menu -->
-					</div> <!-- .main-navigation -->
-					<div class="mobile-navigation"></div>
-				</div>
-			</header>
-			
-
-			<main class="main-content">
-				<div class="page">
-					<div class="container">
-						<div class="text-center">
-							<div class="filter-links filterable-nav">
-								<select class="mobile-filter">
-									<option value="*">همه را نشان بده</option>
-									<option value=".hair">مو</option>
-									<option value=".manicure">مانیکور</option>
-									<option value=".pedicure">پدیکور</option>
-									<option value=".face">صورت</option>
-									<option value=".makeup">آرایش</option>
-								</select>
-								<a href="#" class="current wow fadeInRight" data-filter="*">همه</a>
-								<a href="#" class="wow fadeInRight" data-wow-delay=".2s" data-filter=".hair">مو</a>
-								<a href="#" class="wow fadeInRight" data-wow-delay=".4s" data-filter=".manicure">مانیکور</a>
-								<a href="#" class="wow fadeInRight" data-wow-delay=".6s" data-filter=".pedicure">پدیکور</a>
-								<a href="#" class="wow fadeInRight" data-wow-delay=".8s" data-filter=".face">صورت</a>
-								<a href="#" class="wow fadeInRight" data-wow-delay="1s" data-filter=".makeup">آرایش</a>
-							</div>
-							
-						</div>
-
-						<div class="filterable-items">
-							<div class="gallery-item filterable-item manicure">
-								<a href="dummy/large-gallery/gallery-1.jpg">
-									<figure class="featured-image">
-										<img src="dummy/gallery-1.jpg" alt="">
-										<figcaption>
-											<h2 class="gallery-title">کوتاهی ناخن</h2>
-											<p>مجموعه‌ای از آخرین طرح‌های مانیکور</p>
-										</figcaption>
-									</figure>
-								</a>
-							</div>
-							<div class="gallery-item filterable-item face">
-								<a href="dummy/large-gallery/gallery-2.jpg">
-									<figure class="featured-image">
-										<img src="dummy/gallery-2.jpg" alt="">
-										<figcaption>
-											<h2 class="gallery-title">درمان صورت</h2>
-											<p>لحظاتی از خدمات درمانی صورت در مرکز زیبایی</p>
-										</figcaption>
-									</figure>
-								</a>
-							</div>
-							<div class="gallery-item filterable-item hair">
-								<a href="dummy/large-gallery/gallery-3.jpg">
-									<figure class="featured-image">
-										<img src="dummy/gallery-3.jpg" alt="">
-										<figcaption>
-											<h2 class="gallery-title">کوتاهی مو</h2> 
-											<p>تصاویری از کوتاهی مو در مرکز زیبایی</p>
-										</figcaption>
-									</figure>
-								</a>
-							</div>
-							
-							<div class="gallery-item filterable-item pedicure">
-								<a href="dummy/large-gallery/gallery-4.jpg">
-									<figure class="featured-image">
-										<img src="dummy/gallery-4.jpg" alt="">
-										<figcaption>
-											<h2 class="gallery-title">مراقبت پا</h2>
-											<p>عکس‌هایی از خدمات مراقبت پا در مرکز زیبایی</p>
-										</figcaption>
-									</figure>
-								</a>
-							</div>
-							<div class="gallery-item filterable-item face">
-								<a href="dummy/large-gallery/gallery-5.jpg">
-									<figure class="featured-image">
-										<img src="dummy/gallery-5.jpg" alt="">
-										<figcaption>
-											<h2 class="gallery-title">خدمات صورت</h2>
-											<p>عکس‌هایی از خدمات درمانی صورت در مرکز زیبایی</p>
-										</figcaption>
-									</figure>
-								</a>
-							</div>
-							<div class="gallery-item filterable-item face">
-								<a href="dummy/large-gallery/gallery-6.jpg">
-									<figure class="featured-image">
-										<img src="dummy/gallery-6.jpg" alt="">
-										<figcaption>
-											<h2 class="gallery-title">نگه‌داری پوست صورت</h2>
-											<p>عکس‌هایی از خدمات نگه‌داری پوست صورت در مرکز زیبایی</p>
-										</figcaption>
-									</figure>
-								</a>
-							</div>
-							<div class="gallery-item filterable-item manicure">
-								<a href="dummy/large-gallery/gallery-7.jpg">
-									<figure class="featured-image">
-										<img src="dummy/gallery-7.jpg" alt="">
-										<figcaption>
-											<h2 class="gallery-title">مانیکور</h2>
-											<p>عکس‌هایی از خدمات مانیکور در مرکز زیبایی</p>
-										</figcaption>
-									</figure>
-								</a>
-							</div>
-							
-							<div class="gallery-item filterable-item face">
-								<a href="dummy/large-gallery/gallery-8.jpg">
-									<figure class="featured-image">
-										<img src="dummy/gallery-8.jpg" alt="">
-										<figcaption>
-											<h2 class="gallery-title">مراقبت پوست صورت</h2>
-											<p>عکس‌هایی از خدمات مراقبت پوست صورت در مرکز زیبایی</p>
-										</figcaption>
-									</figure>
-								</a>
-							</div>
-							<div class="gallery-item filterable-item face">
-								<a href="dummy/large-gallery/gallery-9.jpg">
-									<figure class="featured-image">
-										<img src="dummy/gallery-9.jpg" alt="">
-										<figcaption>
-											<h2 class="gallery-title">خدمات درمانی صورت</h2>
-											<p>عکس‌هایی از خدمات درمانی صورت در مرکز زیبایی</p>
-										</figcaption>
-									</figure>
-								</a>
-							</div>
-							<div class="gallery-item filterable-item manicure">
-								<a href="dummy/large-gallery/gallery-10.jpg">
-									<figure class="featured-image">
-										<img src="dummy/gallery-10.jpg" alt="">
-										<figcaption>
-											<h2 class="gallery-title">خدمات مانیکور</h2>
-											<p>عکس‌هایی از خدمات مانیکور در مرکز زیبایی</p>
-										</figcaption>
-									</figure>
-								</a>
-							</div>
-							<div class="gallery-item filterable-item makeup">
-								<a href="dummy/large-gallery/gallery-11.jpg">
-									<figure class="featured-image">
-										<img src="dummy/gallery-11.jpg" alt="">
-										<figcaption>
-											<h2 class="gallery-title">آرایش</h2>
-											<p>عکس‌هایی از خدمات آرایش در مرکز زیبایی</p>
-										</figcaption>
-									</figure>
-								</a>
-							</div>
-							
-							<div class="gallery-item filterable-item makeup">
-								<a href="dummy/large-gallery/gallery-12.jpg">
-									<figure class="featured-image">
-										<img src="dummy/gallery-12.jpg" alt="">
-										<figcaption>
-											<h2 class="gallery-title">خدمات آرایشی</h2>
-											<p>عکس‌هایی از خدمات آرایشی در مرکز زیبایی</p>
-										</figcaption>
-									</figure>
-								</a>
-							</div>
-							
-						</div>
+					  </div>
 					</div>
-				</div>
-			</main>
-
-			<footer class="site-footer">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-3">
-							<div class="widget contact-widget">
-								<h3 class="widget-title">تماس</h3>
-								<div class="contact-info">
-									<address>
-										<img src="images/icon-map-small.png" class="icon">
-										<p><strong>نام شرکت</strong> 563 خیابان آونیو، نیویورک</p>
-									</address>
-									<a href="mailto:contact@companyname.com" class="mail"><img src="images/icon-envelope-small.png" class="icon">contact@companyname.com</a>
-									<a href="tel:(500)942042259" class="phone"><img src="images/icon-phone-small.png" class="icon">(500)942042259</a>
-								</div>
-							</div>
+					<div class="col-md-3">
+					  <div class="widget">
+						<h3 class="widget-title">شبکه های اجتماعی</h3>
+						<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم.</p>
+						<div class="social-links">
+						  <a href="#"><i class="fa fa-facebook"></i></a>
+						  <a href="#"><i class="fa fa-twitter"></i></a>
+						  <a href="#"><i class="fa fa-google-plus"></i></a>
+						  <a href="#"><i class="fa fa-pinterest"></i></a>
 						</div>
-						<div class="col-md-3">
-							<div class="widget">
-								<h3 class="widget-title">شبکه‌های اجتماعی</h3>
-								<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم </p>
-								<div class="social-links">
-									<a href="#"><i class="fa fa-facebook"></i></a>
-									<a href="#"><i class="fa fa-twitter"></i></a>
-									<a href="#"><i class="fa fa-google-plus"></i></a>
-									<a href="#"><i class="fa fa-pinterest"></i></a>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="widget">
-								<h3 class="widget-title">خبرنامه</h3>
-								<form action="#" class="subscribe-form">
-									<input type="email" placeholder="ایمیل خود را وارد کنید...">
-									<input type="submit" value="ثبت">
-								</form>
-							</div>
-						</div>
+					  </div>
 					</div>
-					<div class="colophon">
-						<p>حق چاپ © ۲۰۱۴ نام شرکت. طراحی شده توسط Themezy. تمامی حقوق محفوظ است.</p>
+					<div class="col-md-6">
+					  <div class="widget">
+						<h3 class="widget-title">خبرنامه</h3>
+						<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم.</p>
+						<form action="#" class="subscribe-form">
+						  <input type="email" placeholder="ایمیل خود را وارد کنید..." />
+						  <input type="submit" value="عضویت" />
+						</form>
+					  </div>
 					</div>
+				  </div>
+		
+				  <div class="colophon">
+					<p>کلیه حقوق برای سالن زیبایی محفوظ است. طراحی توسط کدپیوتر.</p>
+				  </div>
 				</div>
-			</footer>
-			
-			
-		</div>
-		
+			  </footer>
+    </div>
 
-		
-
-		<script src="js/jquery-1.11.1.min.js"></script>
-		<script src="js/plugins.js"></script>
-		<script src="js/app.js"></script>
-		
-	</body>
-
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/app.js"></script>
+  </body>
 </html>

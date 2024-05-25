@@ -774,12 +774,14 @@ form input:not([type=submit]), form textarea {
 }
 .address-info .address,
 .address-info .contact-info {
-  display: inline-block;
+  display: flex;
   vertical-align: top;
+  width: 100%;
 }
 .address-info .address p,
 .address-info .contact-info p {
-  margin: 0;
+  margin-right: 10px;
+  margin-bottom: 5px;
 }
 .address-info .address {
   width: 200px;
@@ -2347,6 +2349,7 @@ img {
 }
 .widget.contact-widget .contact-info-item-text {
   margin-right: 15px;
+  margin-bottom: 5px;
 }
 .widget.contact-widget .address {
   padding-left: 30px;
